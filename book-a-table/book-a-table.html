@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervo tavolinen</title>
+    <link rel="stylesheet" href="./book-a-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <ul class="normalMenu">
+            <li><a href="../dashboard/dashboard.html">Ballina</a></li>
+            <li><a href="../about-us/about-us.html">Rreth Nesh</a></li>
+            <li><a href="../meny/meny.html">Meny</a></li>
+            <li><a href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+            <li><a href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+            <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+        </ul>
+        
+     
+    </nav>
+  
+    <nav class="hamburgerMenu">
+        <i class="fa-solid fa-bars hamburgerIcon" onclick="toggleMenu()"></i>
+        <ul class="hamburgerNav hide">
+            <li><a href="../dashboard/dashboard.html">Ballina</a></li>
+            <li><a href="../about-us/about-us.html">Rreth Nesh</a></li>
+            <li><a href="../meny/meny.html">Meny</a></li>
+            <li><a href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+            <li><a href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+            <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+        </ul>
+    </nav>
+
+    <form class="tableContainer" onsubmit="alert('Faleminderit per rezervimin tuaj')">
+        <h1>Rezervo tavolinen</h1>
+        <label for="">Emri: </label><br>
+        <input type="text" name="" id="" required><br><br>
+        <label for="">Email: </label><br>
+        <input type="email" name="" id="" required><br><br>
+        <label for="">Data dhe koha: </label><br>
+        <input type="datetime-local" name="" id="" required><br><br>
+        <label for="">Numri i personave: </label><br>
+        <input type="number" min="1" max="10" name="" id="" required><br><br>
+        <label for="">Number i tavolinave</label><br><input type="number" min="1" max="3" name="" id="" required><br><br>
+
+        <button type="submit">Rezervo tani</button>
+    </form>
+    <div onclick="closeModal()" id="overlay">
+        <div class="modal" onclick="event.stopPropagation()">
+            <h1>A je i sigurt qe do te dalesh?</h1>
+            <a href="../index.html"><button class="btn btn-logout">Po</button></a>
+            <button class="btn btn-cancel" onclick="closeModal()">Anulo</button>
+        </div>
+    
+    </div> 
+
+    <script src="../index.js"></script>
+</body>
+</html>

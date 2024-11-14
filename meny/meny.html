@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meny</title>
+    <link rel="stylesheet" href="./meny.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="normalMenu">
+            <li><a href="../dashboard/dashboard.html">Ballina</a></li>
+            <li><a href="../about-us/about-us.html">Rreth Nesh</a></li>
+            <li><a href="../meny/meny.html">Meny</a></li>
+            <li><a href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+            <li><a href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+            <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+        </ul>
+        
+     
+    </nav>
+
+    <nav class="hamburgerMenu">
+        <i class="fa-solid fa-bars hamburgerIcon" onclick="toggleMenu()"></i>
+        <ul class="hamburgerNav hide">
+            <li><a href="../dashboard/dashboard.html">Ballina</a></li>
+            <li><a href="../about-us/about-us.html">Rreth Nesh</a></li>
+            <li><a href="../meny/meny.html">Meny</a></li>
+            <li><a href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+            <li><a href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+            <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+        </ul>
+    </nav>
+    
+    
+    <h2 class="margin" id="top">Shko tek</h2>
+    <div class="meny-nav">
+       <a href="#ushqimet"> <div>
+            <i class="fa-solid fa-burger"></i>
+            <h2>Ushqimet</h2>
+        </div>
+     </a>
+        <a href="#pijet">
+        <div>
+            <i class="fa-solid fa-wine-glass"></i>
+            <h2>Pijet</h2>
+         </div>
+     </a>
+        <a href="#desserts">
+            <div>
+            <i class="fa-solid fa-ice-cream"></i>
+            <h2>Ëmbëlsirat</h2>
+        </div>
+    </a>
+    </div>
+    <a href="#top"><button class="up-button"><i class="fa-solid fa-up-long"></i></button></a>
+    
+
+    <h1 id="ushqimet">Ushqimet</h1>
+    
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/burger.png" alt="">
+                <h2>Hamburger</h2>
+                <h3>2.50$</h3>
+                <p>Sanduiç me mish viçi dhe përbërës të ndryshëm.</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div>
+                <img src="../images/menyImages/caesarSalad.png" alt="">
+                <h2>Sallat Caesar</h2>
+                <h3>6.00$</h3>
+                <p>Sallatë jeshile me djathë, kruaçana dhe salcë.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/chickenSandwich.png" alt="">
+                <h2>Sanduiç Pule</h2>
+                <h3>4.00$</h3>
+                <p>Sanduiç me mish pule të gatuar, sallatë dhe salca.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/macAndCheese.png" alt="">
+                <h2>Mac and Cheese</h2>
+                <h3>7$</h3>
+                <p>Pjatë me makarona dhe salcë kremoze djathi.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+   
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/margharettiPizza.png" alt="">
+                <h2>Pice margarita</h2>
+                <h3>5.00$</h3>
+                <p>Picë me salcë domateje dhe djathë mozzarella</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div>
+                <img src="../images/menyImages/sphagettiCarbona.png" alt="">
+                <h2>Shpageta Carbonara</h2>
+                <h3>8.00$</h3>
+                <p>Shpageta me salcë veze, djathë dhe pancetë.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/steak.png" alt="">
+                <h2>Mish viqi</h2>
+                <h3>20.00$</h3>
+                <p>Mish viçi i pjekur ose i gatuar në mënyra të ndryshme.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/sushi.png" alt="">
+                <h2>Sushi</h2>
+                <h3>12.00$</h3>
+                <p>Oriz i avulluar me algat nori dhe mbushje si peshk ose perime.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+
+       
+        <h1 id="pijet">Pijet</h1>
+
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/cocaCola.png" alt="">
+                <h2>Coca Cola</h2>
+                <h3>2.00$</h3>
+                <p>Pije gazuese me shije karamele dhe limoni.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/fanta.png" alt="">
+                <h2>Fanta</h2>
+                <h3>2.00$</h3>
+                <p>Pije gazuese me shije frutash, zakonisht portokalli.</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div>
+                <img src="../images/menyImages/redbull.png" alt="">
+                <h2>Red Bull</h2>
+                <h3>3.00$</h3>
+                <p>Pije energjike që përmban kafeinë dhe sheqer.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/hotChocolate.png" alt="">
+                <h2>Çokollate e ngrohtë</h2>
+                <h3>3.50$</h3>
+                <p>Pije e ngrohtë me çokollatë të shkrirë dhe qumësht.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/redWine.png" alt="">
+                <h2>Vere e kuqe</h2>
+                <h3>5.00$</h3>
+                <p>
+                    Pije alkoolike e bërë nga rrushi i kuq.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/makiato.png" alt="">
+                <h2>Makiato</h2>
+                <h3>1.20$</h3>
+                <p>Kafe  me pak qumësht.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/ginAndTonic.png" alt="">
+                <h2>Gin & Tonic</h2>
+                <h3>5.00$</h3>
+                <p>Pije alkoolike, shpesh me limon ose garniturë jeshile.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/whiskey.png" alt="">
+                <h2>Whiskey</h2>
+                <h3>5.00$</h3>
+                <p>Pije alkoolike e distiluar nga gruri, elbi ose misri.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        
+
+
+        <h1 id="desserts">Ëmbëlsirat</h1>
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/bakllave.png" alt="">
+                <h2>Bakllave</h2>
+                <h3>2.00$</h3>
+                <p>Ëmbëlsirë me shtresa brumi, mjaltë dhe arrë.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/brownies.png" alt="">
+                <h2>Biskota Qokollate</h2>
+                <h3>3.00$</h3>
+                <p>Ëmbëlsirë me çokollatë, e shkrirë dhe shpesh me arra.</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div>
+                <img src="../images/menyImages/cheesecake.png" alt="">
+                <h2>Cheesecake</h2>
+                <h3>4.20$</h3>
+                <p>
+                    Ëmbëlsirë kremoze me bazë biskote dhe djathë.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/churros.png" alt="">
+                <h2>Churros</h2>
+                <h3>3.50$</h3>
+                <p>Përshkruar si petë të skuqura, të spërkatura me sheqer dhe kanellë.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="meny">
+            <div>
+                <img src="../images/menyImages/gelato.png" alt="">
+                <h2>Gelato</h2>
+                <h3>4.00$</h3>
+                <p>Një akullore e dendur dhe kremoze me shije të ndryshme frutash ose çokollate.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/macarons.png" alt="">
+                <h2>Macarons</h2>
+                <h3>5.00$</h3>
+                <p>Biskota meringe me një shtresë kremi në mes, të ngjyrave të ndryshme.</p>
+                <button>Add to cart</button>
+            </div>
+
+            <div>
+                <img src="../images/menyImages/tiramisu.png" alt="">
+                <h2>Tiramisu</h2>
+                <h3>5.00$</h3>
+                <p>Një ëmbëlsirë me shtresa ladyfingers, mascarpone dhe kafe.</p>
+                <button>Add to cart</button>
+            </div>
+            <div>
+                <img src="../images/menyImages/trileqe.png" alt="">
+                <h2>Trileqe</h2>
+                <h3>1.00$</h3>
+                <p>Një ëmbëlsirë me shtresa brumi dhe krem, të lagur me qumësht dhe sheqer.</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+       
+
+
+
+
+        <footer class="fade-in">
+            <div>
+                <h2> <i class="fa-regular fa-address-book"></i> Kontakti</h2>
+                <p><i class="fa-solid fa-location-dot"></i> Rruga savor , Central park</p>
+                <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+                <p><i class="fa-regular fa-envelope"></i> savorhaven@gmail.com</p>
+            </div>
+            <div>
+                <h2><i class="fa-regular fa-envelope-open"></i> Hapur</h2>
+                <h3><i class="fa-solid fa-calendar-days"></i> E hene - E shtune</h3>
+                <p><i class="fa-solid fa-clock"></i> 08:00 - 22:00</p>
+                <h3><i class="fa-solid fa-calendar-days"></i> E diele</h3>
+                <p><i class="fa-solid fa-clock"></i> 10:00 - 18:00</p>
+            </div>
+            <div>
+                <h2><i class="fa-regular fa-envelope"></i> Lajmet</h2>
+                <h3>Na ndiqni per lajmet permes emailes</h3>
+                
+                <div class="newsletter">
+                    <input placeholder="Shkruaj emailen" type="text" name="" id="">
+                    <button onclick="alert('Prej tani ne do ju dergojme lajmet permes emailes!')">Subscribe</button>
+                </div>
+            </div>
+            <p>@Savor Haven e krijuar nga Suad Pllana 2024</p>
+        </footer>
+    <div id="overlay" onclick="closeModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <h1>A je i sigurt qe do te dalesh?</h1>
+            <a href="../index.html"><button class="btn btn-logout">Po</button></a>
+            <button class="btn btn-cancel" onclick="closeModal()">Anulo</button>
+        </div>
+    
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+</html>

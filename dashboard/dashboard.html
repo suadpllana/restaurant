@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ballina</title>
+    <link rel="stylesheet" href="./dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <ul class="normalMenu">
+          <li><a class="anchor" href="../dashboard/dashboard.html">Ballina</a></li>
+          <li><a class="anchor" href="../about-us/about-us.html">Rreth Nesh</a></li>
+          <li><a class="anchor" href="../meny/meny.html">Meny</a></li>
+          <li><a class="anchor" href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+          <li><a class="anchor" href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+          <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+      </ul>
+      
+   
+  </nav>
+
+  <nav class="hamburgerMenu">
+      <i class="fa-solid fa-bars hamburgerIcon" onclick="toggleMenu()"></i>
+      <ul class="hamburgerNav hide">
+          <li><a href="../dashboard/dashboard.html">Ballina</a></li>
+          <li><a href="../about-us/about-us.html">Rreth Nesh</a></li>
+          <li><a href="../meny/meny.html">Meny</a></li>
+          <li><a href="../book-a-table/book-a-table.html">Rezervo Tavolinen</a></li>
+          <li><a href="../contact/contact.html">Lokacioni dhe kontakti</a></li>
+          <li><button id="logoutBtn" onclick="openModal()">Dil</button></li>
+      </ul>
+  </nav>
+
+    <div class="header" id="top">
+      <div class="container">
+        <div class="content">
+          <h1>Savor Haven Restaurant</h1>
+        </div>
+        <div class="spinDiv">
+          <img class="spin-image" src="../images/spinningImage.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    
+    <a href="#top"
+      ><button class="up-button"><i class="fa-solid fa-up-long"></i></button
+    ></a>
+
+
+    <h2>Sherbimet tona</h2>
+    <div class="services fade-in">
+      <div>
+        <i class="fas fa-user"></i>
+        <h2>Kuzhinier te Shquar</h2>
+        <p>
+          Kuzhinierët tanë te shquar sjellin pasion dhe kreativitet në çdo
+          pjatë, duke kombinuar shijet tradicionale me stilin modern për një
+          përvojë të paharrueshme ngrënieje.
+        </p>
+      </div>
+      <div>
+        <i class="fas fa-utensils"></i>
+        <h2>Ushqim me kualitet</h2>
+        <p>
+          Ne shërbejmë ushqim me cilësi të lartë të bërë me përbërës të freskët,
+          premium, duke siguruar që çdo pjatë të jetë e shijshme dhe e punuar me
+          mjeshtëri.
+        </p>
+      </div>
+      <div>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h2>Porosi online</h2>
+        <p>
+          Porositni online pjatat tuaja të preferuara për dërgesë të shpejtë dhe
+          të përshtatshme, duke sjellë ushqimet tona të shijshme direkt në derën
+          tuaj.
+        </p>
+      </div>
+      <div>
+        <i class="fa-solid fa-truck"></i>
+        <h2>Sherbim 24/7</h2>
+
+        <p>
+          Shijoni shërbimin tonë 24/7, duke ofruar ushqime të shijshme dhe
+          shpërndarje të shpejtë sa herë që ju nevojiten, ditë apo natë.
+        </p>
+      </div>
+    </div>
+
+    <h2>Meny-te tona me te mira</h2>
+    <div class="menyItems fade-in">
+      <div>
+        <img src="../images/burgerMenu.png" alt="" />
+        <h3>
+          Meny per hamburger<br />
+          <br /><br />
+          $5.99
+        </h3>
+      </div>
+      <div>
+        <img src="../images/sphagettiMenu.png" alt="" />
+        <h3>
+          Meny per shpageta <br />
+          <br /><br />
+          $7.99
+        </h3>
+      </div>
+      <div>
+        <img src="../images/fishMenu.png" alt="" />
+        <h3>
+          Meny per peshk<br /><br /><br />
+          $6.99
+        </h3>
+      </div>
+    </div>
+
+    <h2>Kuzhinieret tane</h2>
+    <div class="chefs fade-in">
+      <div class="chefs-div">
+        <img src="../images/chef1.png" alt="" />
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="chefs-div">
+        <img src="../images/chef2.png" alt="" />
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="chefs-div">
+        <img src="../images/chef3.png" alt="" />
+        <div class="social-media">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonialsContainer fade-in">
+      <h2>Mendimet e klienteve nga e gjithe bota!</h2>
+
+      <div class="testimonials">
+        <p class="prev" onclick="moveBackwards()">⏮️</p>
+        <p class="next" onclick="moveForward()">⏭️</p>
+
+        <div class="slider">
+          <ul id="ulRef">
+            <li>
+              <div class="slide">
+                <div class="user-info">
+                  <img src="../images/testimonialBoy.png" alt="" />
+                  <div>
+                    <h2>Carlos García</h2>
+                    <span>Barcelona, Spain</span>
+                  </div>
+                </div>
+                <p>
+                  "The food here is absolutely amazing! Every dish I've tried
+                  has been full of flavor and made with such fresh ingredients.
+                  It's always a treat coming here!"
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="slide">
+                <div class="user-info">
+                  <img src="../images/testimonialGirl.png" alt="" />
+                  <div>
+                    <h2>Anna Müller</h2>
+                    <span>Berlin, Germany</span>
+                  </div>
+                </div>
+                <p>
+                  "The service is top-notch. The staff is so friendly and
+                  attentive, always making sure we have everything we need. It
+                  truly makes every visit enjoyable!"
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="slide">
+                <div class="user-info">
+                  <img src="../images/testimonialBoy.png" alt="" />
+                  <div>
+                    <h2>Giuseppe Rossi</h2>
+                    <span>Rome, Italy</span>
+                  </div>
+                </div>
+                <p>
+                  "I love that they offer 24/7 service. Whether it's a
+                  late-night craving or an early morning breakfast, I know I can
+                  count on them to deliver delicious food any time."
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="slide">
+                <div class="user-info">
+                  <img src="../images/testimonialGirl.png" alt="" />
+                  <div>
+                    <h2>Sophie de Vries</h2>
+                    <span>Amsterdam, Netherlands</span>
+                  </div>
+                </div>
+                <p>
+                  "Ordering online is a breeze! My food always arrives hot and
+                  fresh, and the process is quick and easy. Perfect for those
+                  busy days when I want a great meal without the hassle."
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>Komentet e klienteve📓</h2>
+    <div class="feedback fade-in">
+      <div>
+        <h2>Vlerësimet⭐</h2>
+        <input type="radio" name="rating" id="" /><label for="">5 yje🌟</label
+        ><br /><br />
+        <input type="radio" name="rating" id="" /><label for="">4 yje🌟</label
+        ><br /><br />
+        <input type="radio" name="rating" id="" /><label for="">3 yje🌟</label
+        ><br /><br />
+        <input type="radio" name="rating" id="" /><label for="">2 yje🌟</label
+        ><br /><br />
+        <input type="radio" name="rating" id="" /><label for="">1 yje🌟</label
+        ><br /><br />
+        <button
+          onclick="alert('Faleminderit per vleresimin tuaj')"
+          class="ratingButton"
+        >
+          Konfirmo
+        </button>
+      </div>
+      <form method="POST" id="form">
+        <h2>Mesazhi📝</h2>
+        <input
+          type="hidden"
+          name="access_key"
+          value="95027c41-ba11-47de-9d9f-ade1969f7f99"
+        />
+
+        <label for="">Emri: </label><br /><input
+          type="text"
+          placeholder="Shkruaj emrin"
+          name="emri"
+          required
+        /><br /><br />
+
+        <label for="">Mesazhi:</label><br /><textarea
+          cols="30"
+          placeholder="Shkruaj mesazhin"
+          rows="6"
+          name="mesazhi"
+          required
+        ></textarea
+        ><br /><br /><br />
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <button class="ratingButton" type="submit">Konfirmo</button>
+
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <footer class="fade-in">
+      <div>
+        <h2><i class="fa-regular fa-address-book"></i> Kontakti</h2>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Rruga savor , Central park
+        </p>
+        <p><i class="fa-solid fa-phone"></i> +123 456 789</p>
+        <p><i class="fa-regular fa-envelope"></i> savorhaven@gmail.com</p>
+      </div>
+      <div>
+        <h2><i class="fa-regular fa-envelope-open"></i> Hapur</h2>
+        <h3><i class="fa-solid fa-calendar-days"></i> E hene - E shtune</h3>
+        <p><i class="fa-solid fa-clock"></i> 08:00 - 22:00</p>
+        <h3><i class="fa-solid fa-calendar-days"></i> E diele</h3>
+        <p><i class="fa-solid fa-clock"></i> 10:00 - 18:00</p>
+      </div>
+      <div>
+        <h2><i class="fa-regular fa-envelope"></i> Lajmet</h2>
+        <h3>Na ndiqni per lajmet permes emailes</h3>
+
+        <div class="newsletter">
+          <input placeholder="Shkruaj emailen" type="text" name="" id="" />
+          <button
+            onclick="alert('Prej tani ne do ju dergojme lajmet permes emailes!')"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+      <p>@Savor Haven e krijuar nga Suad Pllana 2024</p>
+    </footer>
+
+    <div onclick="closeModal()" id="overlay">
+      <div class="modal" onclick="event.stopPropagation()">
+        <h1>A je i sigurt qe do te dalesh?</h1>
+        <a href="../index.html"><button class="btn btn-logout">Po</button></a>
+        <button class="btn btn-cancel" onclick="closeModal()">Anulo</button>
+      </div>
+    </div>
+    <script src="../index.js"></script>
+  </body>
+</html>
